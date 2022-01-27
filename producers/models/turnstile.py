@@ -35,7 +35,7 @@ class Turnstile(Producer):
         # replicas
         #
         #
-        topic_name = f"station.{station_name}.turnstiles"
+        topic_name = "turnstiles_per_station"
         super().__init__(
             topic_name,
             key_schema=Turnstile.key_schema,
