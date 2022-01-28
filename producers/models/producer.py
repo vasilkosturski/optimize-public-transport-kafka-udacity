@@ -88,3 +88,10 @@ class Producer:
         if self.producer is not None:
             self.producer.flush()
             logger.info("Flushing producer")
+
+    @staticmethod
+    def check_topic_exists(client, topic_name):
+        """Checks if the given topic exists"""
+        topic_metadata = client.list_topics()
+        topics = topic_metadata.topics
+        return topic_name in topics
