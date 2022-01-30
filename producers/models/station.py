@@ -37,7 +37,7 @@ class Station(Producer):
         # replicas
         #
         #
-        topic_name = f"station.{station_name}.arrivals"
+        topic_name = f"station.arrivals.{station_name}"
         super().__init__(
             topic_name,
             key_schema=Station.key_schema,
