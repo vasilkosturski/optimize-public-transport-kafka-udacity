@@ -38,7 +38,7 @@ topic = app.topic("postgres-stations", value_type=Station)
 out_topic = app.topic("transformed-stations", partitions=1)
 # TODO: Define a Faust Table
 table = app.Table(
-   "transformed-stations-table",
+   "org.chicago.cta.stations.table.v1",
    default=TransformedStation, # TransformedStation object type
    partitions=1,
    changelog_topic=out_topic,
