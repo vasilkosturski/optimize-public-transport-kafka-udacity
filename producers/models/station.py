@@ -43,7 +43,7 @@ class Station(Producer):
             key_schema=Station.key_schema,
             value_schema=Station.value_schema,
             num_partitions=3,
-            num_replicas=3
+            num_replicas=1
         )
 
         self.station_id = int(station_id)
@@ -62,7 +62,7 @@ class Station(Producer):
         # TODO: Complete this function by producing an arrival message to Kafka
         #
         #
-        logger.info("arrival kafka integration complete")
+        logger.info("Producing arrival events")
         self.producer.produce(
             topic=self.topic_name,
             key={"timestamp": self.time_millis()},
