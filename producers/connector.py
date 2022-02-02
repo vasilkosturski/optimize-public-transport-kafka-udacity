@@ -51,7 +51,7 @@ def configure_connector():
                 # TODO
                 "incrementing.column.name": "stop_id",
                 # TODO
-                "topic.prefix": "postgres-",
+                "topic.prefix": "org.chicago.cta.postgres-",
                 # TODO
                 "poll.interval.ms": 3600000  # 3600000 = 1 hour
             }
