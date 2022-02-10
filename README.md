@@ -1,8 +1,8 @@
 # Public Transit Status with Apache Kafka
 
-In this project, you will construct a streaming event pipeline around Apache Kafka and its ecosystem. Using public data from the [Chicago Transit Authority](https://www.transitchicago.com/data/) we will construct an event pipeline around Kafka that allows us to simulate and display the status of train lines in real time.
+This project represents a streaming event pipeline around Apache Kafka and its ecosystem using public data from the [Chicago Transit Authority](https://www.transitchicago.com/data/).
 
-When the project is complete, you will be able to monitor a website to watch trains move from station to station.
+When the project is complete, you will be able to monitor the status of the train lines in real time.
 
 ![Final User Interface](images/ui.png)
 
@@ -39,11 +39,9 @@ Once docker-compose is ready, the following services will be available:
 | KSQL | [http://localhost:8088](http://localhost:8088) | http://ksql:8088 |
 | PostgreSQL | `jdbc:postgresql://localhost:5432/cta` | `jdbc:postgresql://postgres:5432/cta` | `cta_admin` | `chicago` |
 
-Note that to access these services from your own machine, you will always use the `Host URL` column.
-
 ### Running the Simulation
 
-There are two pieces to the simulation, the `producer` and `consumer`. As you develop each piece of the code, it is recommended that you only run one piece of the project at a time.
+In order to run the full simulation, you need to execute the steps below.
 
 #### To run the `producer`:
 
