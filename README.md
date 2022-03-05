@@ -2,7 +2,7 @@
 
 This project represents a streaming event pipeline around Apache Kafka and its ecosystem using public data from the [Chicago Transit Authority](https://www.transitchicago.com/data/).
 
-You can read the full project overview in [this blog post](https://link-url-here.org).
+You can read the full project overview in [this blog post](https://vkontech.com/monitoring-public-transportation-with-the-kafka-ecosystem-demo-project/).
 
 When the project is complete, you will be able to monitor the status of the train lines in real time.
 
